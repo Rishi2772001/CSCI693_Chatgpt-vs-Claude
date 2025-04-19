@@ -1,0 +1,13 @@
+Metric,ChatGPT,Claude
+All Correct,True,True
+Avg Wall Time (ms),0.008,0.010
+Avg CPU Time (ms),0.010,0.011
+CPU Utilization (%),122.2,115.4
+Peak Memory (KB),0.38,0.60
+Coverage (%),85.71,85.71
+LoC (Total),30,42
+LoC (Code),15,14
+Exponent (ChatGPT),2.02,
+Exponent (Claude),,2.04
+Exponent-based Decision,Both solutions have similar scaling behavior.,Both solutions have similar scaling behavior.
+Overall Decision,Both correct; ChatGPT is faster (less wall time). Both solutions have similar scaling behavior.,Both correct; ChatGPT is faster (less wall time). Both solutions have similar scaling behavior.

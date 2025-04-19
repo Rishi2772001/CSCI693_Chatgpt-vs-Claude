@@ -1,0 +1,11 @@
+Metric,ChatGPT,Claude
+All Correct,True,True
+Avg Wall Time (ms),0.001,0.012
+Avg CPU Time (ms),0.002,0.014
+CPU Utilization (%),177.5,109.9
+Peak Memory (KB),0.00,0.68
+Coverage (%),95.00,92.86
+LoC (Total),28,37
+LoC (Code),21,14
+Learning Curve Exponent,0.93,2.02
+Decision,Both correct; ChatGPT has better asymptotic performance.,Both correct; ChatGPT has better asymptotic performance.

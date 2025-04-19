@@ -1,0 +1,6 @@
+Summary: 
+- Small local tests: ChatGPT’s DFS overhead is negligible, so it runs fast.
+- Large chain-like tests: The DFS overhead accumulates with deep recursion, so ChatGPT’s approach can become slower or risk          recursion-limit issues.
+- Claude’s solution uses a reverse-topological approach that is more stable across different input sizes, but might have a slightly larger overhead on tiny graphs.
+
+Hence, ChatGPT appears faster on small local testcases, but Claude’s solution often scales better for large chain graphs—explaining the difference you see between local runs and the learning curve.

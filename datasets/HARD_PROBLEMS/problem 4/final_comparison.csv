@@ -1,0 +1,11 @@
+Metric,ChatGPT,Claude
+All Correct,False,False
+Avg Wall Time (ms),0.005,0.005
+Avg CPU Time (ms),0.008,0.007
+CPU Utilization (%),155.7,137.0
+Peak Memory (KB),0.52,0.35
+Coverage (%),93.33,96.43
+LoC (Total),44,59
+LoC (Code),31,28
+Learning Curve Exponent,N/A,N/A
+Decision,One or both solutions failed some test cases. No clear winner.,One or both solutions failed some test cases. No clear winner.

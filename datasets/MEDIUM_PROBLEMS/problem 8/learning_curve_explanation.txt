@@ -1,0 +1,1 @@
+Claude’s solution can be a bit faster on small input due to simpler overhead, but ChatGPT’s lazy max-heap usage with negative timestamps scales slightly better for large numbers of tweets and followees, showing up as a lower exponent in the learning-curve scenario.

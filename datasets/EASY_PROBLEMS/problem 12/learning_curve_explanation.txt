@@ -1,0 +1,8 @@
+1. ChatGPT’s Slope ~ 1.00 (Near Linear)
+    Theoretically, ChatGPT’s approach can degrade to O(n×m^2) for carefully chosen strings.
+    However, with random data, mismatches tend to occur quickly, so it seldom performs many repeated startswith checks.
+    Empirically, this makes ChatGPT’s runtime appear closer to O(m) (a slope near 1).
+2. Claude’s Slope ~ 0.05 (Sub-linear)
+    Claude’s method is O(n×m) in the worst case, but with random data (where the common prefix is typically very short or empty), it often exits even faster.
+    This leads to a sub-linear slope in the log–log plot (about 0.05), suggesting that for random strings, Claude’s code usually finishes in nearly constant time.
+So while the theoretical complexities differ more sharply, the actual slopes you see reflect how each solution behaves on random test inputs (rather than worst-case inputs). Hence, the graph is correct for these conditions, showing ChatGPT near linear scaling and Claude effectively sub-linear on average.

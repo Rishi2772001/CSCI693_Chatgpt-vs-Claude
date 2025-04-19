@@ -1,0 +1,36 @@
+Problem 3: Text Editor Design
+Design a text editor with a cursor that can do the following:
+
+- Add text to where the cursor is.
+- Delete text from where the cursor is (simulating the backspace key).
+- Move the cursor either left or right.
+
+When deleting text, only characters to the left of the cursor will be deleted. The cursor will also remain within the actual text and cannot be moved beyond it. More formally, we have that 0 <= cursor.position <= currentText.length always holds.
+
+Implement the TextEditor class:
+
+- TextEditor() initializes the object with empty text.
+- void addText(string text) appends text to where the cursor is. The cursor ends to the right of text.
+- int deleteText(int k) deletes k characters to the left of the cursor. Returns the number of characters actually deleted.
+- string cursorLeft(int k) moves the cursor to the left k times. Returns the last min(10, len) characters to the left of the cursor, where len is the number of characters to the left of the cursor.
+- string cursorRight(int k) moves the cursor to the right k times. Returns the last min(10, len) characters to the left of the cursor, where len is the number of characters to the left of the cursor.
+
+Example:
+
+Input:
+["TextEditor", "addText", "deleteText", "addText", "cursorRight", "cursorLeft", "deleteText", "cursorLeft", "cursorRight"]
+[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]
+
+Output:
+[null, null, 4, null, "etpractice", "leet", 4, "", "practi"]
+
+Explanation:
+TextEditor textEditor = new TextEditor(); // The current text is "|" (the '|' represents the cursor).
+textEditor.addText("leetcode"); // The current text becomes "leetcode|".
+textEditor.deleteText(4); // Returns 4. The current text becomes "leet|".
+textEditor.addText("practice"); // The current text becomes "leetpractice|".
+textEditor.cursorRight(3); // Returns "etpractice". The cursor is moved right 3 positions; text remains "leetpractice|".
+textEditor.cursorLeft(8); // Returns "leet". The cursor moves left 8 positions; the text is now "leet|practice".
+textEditor.deleteText(10); // Returns 4. Deletes 4 characters from the left of the cursor; the current text becomes "|practice".
+textEditor.cursorLeft(2); // Returns "". The cursor cannot move further left; text remains "|practice".
+textEditor.cursorRight(6); // Returns "practi". The cursor moves right 6 positions; the text becomes "practi|ce".

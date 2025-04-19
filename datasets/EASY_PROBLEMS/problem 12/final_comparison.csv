@@ -1,0 +1,11 @@
+Metric,ChatGPT,Claude
+All Correct,True,True
+Avg Wall Time (ms),0.003,0.002
+Avg CPU Time (ms),0.004,0.002
+CPU Utilization (%),146.8,139.0
+Peak Memory (KB),0.12,0.09
+Coverage (%),72.73,83.33
+LoC (Total),17,24
+LoC (Code),11,12
+Estimated Complexity Exponent,1.00,0.05
+Decision,"Both correct; Claude is faster (less wall time). Additionally, Claude might scale better for large inputs (lower exponent).","Both correct; Claude is faster (less wall time). Additionally, Claude might scale better for large inputs (lower exponent)."
